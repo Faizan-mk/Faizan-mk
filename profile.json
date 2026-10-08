@@ -1,0 +1,103 @@
+{
+  "username": "Faizan-mk",
+  "name": "Muhammad Faizan",
+  "first": "Faizan",
+  "role": "Full Stack Developer",
+  "company": "Bitzsol",
+  "bio": "I turn ideas into real-world apps —|MERN, Next.js & React Native.",
+  "roles": [
+    "Full Stack Developer",
+    "MERN Stack Engineer",
+    "React Native Developer",
+    "AI-powered App Builder"
+  ],
+  "location": "Pakistan",
+  "stack": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Tailwind",
+    "Vite",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "PostgreSQL",
+    "Prisma",
+    "Supabase",
+    "MySQL",
+    "Firebase",
+    "React Native",
+    "Expo",
+    "Python",
+    "Git",
+    "Vercel",
+    "Figma"
+  ],
+  "learning": [
+    "Next.js",
+    "TypeScript",
+    "React Native",
+    "AI apps"
+  ],
+  "ask_me": [
+    "REST APIs",
+    "JWT Auth",
+    "Supabase",
+    "React"
+  ],
+  "linkedin": "https://www.linkedin.com/in/muhammad-faizanmk",
+  "projects": [
+    {
+      "name": "AI Travel Planner",
+      "desc": "Final-year project: AI trip planner with a Python chatbot.",
+      "tags": [
+        "React",
+        "Node.js",
+        "Python"
+      ],
+      "repo": "Final-Year-Project-AI-travel-planner"
+    },
+    {
+      "name": "Rishta & Rang",
+      "desc": "TypeScript web app, built end-to-end and live on Vercel.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Vercel"
+      ],
+      "repo": "Rishta-and-rang-app",
+      "live": "https://rishta-and-rang-app.vercel.app"
+    },
+    {
+      "name": "Hostel Management",
+      "desc": "Hostel management system for rooms and residents.",
+      "tags": [
+        "React",
+        "Express",
+        "MongoDB"
+      ],
+      "repo": "Hostal_Mangment-system"
+    },
+    {
+      "name": "MERN Auth System",
+      "desc": "JWT + bcrypt auth with protected routes.",
+      "tags": [
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "repo": "User-Authentication-System-MERN-Stack-"
+    }
+  ],
+  "stats": {
+    "repos": 36,
+    "languages": {
+      "JavaScript": 16,
+      "Python": 6,
+      "CSS": 3,
+      "TypeScript": 2,
+      "HTML": 2
+    }
+  }
+}
