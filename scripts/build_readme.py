@@ -5,12 +5,19 @@ one that matches the visitor's theme.
 
 Usage: python scripts/build_readme.py
 """
+import hashlib
+
 from make_sections import CONTACT, HISTORY, PROJECTS, STACK
 
 
+def v(path: str) -> str:
+    """Path plus a short content hash, so browsers fetch the new image when it changes."""
+    return f"./{path}?v={hashlib.md5(open(path, 'rb').read()).hexdigest()[:8]}"
+
+
 def pic(name: str, alt: str, width: str) -> str:
-    return (f'<picture><source media="(prefers-color-scheme: dark)" srcset="./{name}-dark.svg">'
-            f'<img src="./{name}-light.svg" width="{width}" alt="{alt}"></picture>')
+    return (f'<picture><source media="(prefers-color-scheme: dark)" srcset="{v(name + "-dark.svg")}">'
+            f'<img src="{v(name + "-light.svg")}" width="{width}" alt="{alt}"></picture>')
 
 
 def prompt(cmd: str) -> str:
