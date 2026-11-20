@@ -43,7 +43,7 @@
 <path d="M0.5 30 H369.5" stroke="#30363d"/>
 <circle cx="18" cy="15" r="5" fill="#30363d"/>
 <circle cx="34" cy="15" r="5" fill="#30363d"/>
-<circle cx="50" cy="15" r="5" fill="#3fb950"/>
+<circle cx="50" cy="15" r="5" fill="#a855f7"/>
 <text x="185.0" y="19" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11">faizan@github: ~/portrait</text>
 <g fill="#c9d1d9" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace" font-size="6.17" xml:space="preserve">
 <text x="16" y="65.70" textLength="338" lengthAdjust="spacingAndGlyphs" clip-path="url(#r0)">                                           .``::-==--=-:````.                                           </text>
@@ -85,7 +85,7 @@
 <text x="16" y="299.70" textLength="338" lengthAdjust="spacingAndGlyphs" clip-path="url(#r36)"> .``````:::--::-=-:::=-::-:::::----::-++==+=====++*****cs--:`::--+-..``..``.`++:`::``..                 </text>
 <text x="16" y="306.20" textLength="338" lengthAdjust="spacingAndGlyphs" clip-path="url(#r37)">.::`:```:::-::-::-:`:-:::::::`:----::::-+=-====:`:=*+*++c=--:`:-==...`...```.:+*-``.--```.              </text>
 </g>
-<rect x="16" y="60.50" width="5.20" height="6.50" fill="#3fb950" opacity="0">
+<rect x="16" y="60.50" width="5.20" height="6.50" fill="#a855f7" opacity="0">
 <set attributeName="opacity" to="0.9" begin="0.3s"/>
 <animate attributeName="x" from="16" to="354.00" begin="0.300s" dur="0.32s" fill="freeze"/>
 <set attributeName="y" to="60.50" begin="0.300s"/>
