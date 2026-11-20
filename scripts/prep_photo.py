@@ -6,7 +6,7 @@
 3. Composite onto white so the background maps to spaces.
 
 Usage: python scripts/prep_photo.py source-photo.png
-Writes: source-prepped.png (grayscale)
+Writes: source-prepped.png (grayscale), source-mask.png (subject mask)
 """
 import sys
 
@@ -31,4 +31,6 @@ gray = 255 * (gray / 255) ** 0.85
 
 out = gray * alpha[..., 0] + 255 * (1 - alpha[..., 0])
 Image.fromarray(out.clip(0, 255).astype(np.uint8), "L").save("source-prepped.png")
+# Subject mask, so the dark-theme portrait can light the face without lighting the background
+Image.fromarray((alpha[..., 0] * 255).astype(np.uint8), "L").save("source-mask.png")
 print("wrote source-prepped.png")

@@ -15,6 +15,7 @@ import numpy as np
 from PIL import Image, ImageOps
 
 SRC = "source-prepped.png"
+MASK = "source-mask.png"
 from theme import THEMES
 NBSP = "\u00a0"       # renderers trim plain spaces; NBSP keeps the grid
 STATIC = os.environ.get("STATIC") == "1"
@@ -34,28 +35,35 @@ ROW_DUR = 0.32           # s for one row to wipe across
 START = 0.3
 
 
-def to_rows() -> list[str]:
+def to_rows(mode: str) -> list[str]:
+    """Light theme: dark pixels get dense glyphs (ink on paper).
+    Dark theme: bright pixels get dense glyphs (light on a screen), so the face
+    is not a negative; the subject mask keeps the background empty."""
     img = Image.open(SRC).convert("L")
+    mask = Image.open(MASK).convert("L") if os.path.exists(MASK) else None
     # Crop to the subject's bounding box (anything not near-white)
     arr = np.array(img)
-    ys, xs = np.where(arr < 245)
+    ys, xs = np.where((np.array(mask) > 128) if mask else (arr < 245))
     x0, x1, y0 = xs.min(), xs.max() + 1, ys.min()
-    # Head-and-shoulders framing: keep the top ~78% of the subject's width
-    # in height so the face gets more characters than the jacket.
+    # Head-and-shoulders framing
     y1 = min(arr.shape[0], y0 + int((x1 - x0) * 0.74))
-    img = img.crop((x0, y0, x1, y1))
-    img = ImageOps.autocontrast(img, cutoff=1)
+    box = (x0, y0, x1, y1)
+    img = ImageOps.autocontrast(img.crop(box), cutoff=1)
 
     w, h = img.size
     rows = int(round(COLS * (h / w) * CHAR_ASPECT))
-    small = np.array(img.resize((COLS, rows), Image.LANCZOS), dtype=np.float32)
-
-    # Darken mid-tones so the (bright) face picks up visible glyphs while the
-    # pure-white background still maps to spaces.
-    small = 255 * (small / 255) ** GAMMA
-    idx = ((255 - small) / 255 * (len(RAMP) - 1)).round().astype(int)
+    small = np.array(img.resize((COLS, rows), Image.LANCZOS), dtype=np.float32) / 255
+    if mode == "dark":
+        level = small ** (1 / GAMMA)
+        if mask:
+            m = np.array(mask.crop(box).resize((COLS, rows), Image.LANCZOS), dtype=np.float32) / 255
+            level = np.where(m > 0.5, 0.12 + 0.88 * level, 0.0)
+        else:
+            level = np.where(small > 0.96, 0.0, level)
+    else:
+        level = 1 - small ** GAMMA
+    idx = (level * (len(RAMP) - 1)).round().astype(int)
     lines = ["".join(RAMP[i] for i in row) for row in idx]
-    # Drop empty rows at the top/bottom
     while lines and not lines[0].strip():
         lines.pop(0)
     while lines and not lines[-1].strip():
@@ -147,9 +155,9 @@ def build(lines: list[str], t: dict) -> str:
 
 
 if __name__ == "__main__":
-    rows = to_rows()
     os.makedirs("assets", exist_ok=True)
     for mode, t in THEMES.items():
+        rows = to_rows(mode)
         with open(f"assets/portrait-{mode}.svg", "w", encoding="utf-8") as f:
             f.write(build(rows, t))
     print(f"wrote assets/portrait-{{dark,light}}.svg ({len(rows)} rows x {COLS} cols)")
