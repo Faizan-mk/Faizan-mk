@@ -7,12 +7,15 @@ Usage: python scripts/build_readme.py
 """
 import hashlib
 
+RAW = "https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/"
+
 from make_sections import CONTACT, HISTORY, PROJECTS, STACK
 
 
 def v(path: str) -> str:
     """Path plus a short content hash, so browsers fetch the new image when it changes."""
-    return f"./{path}?v={hashlib.md5(open(path, 'rb').read()).hexdigest()[:8]}"
+    # Absolute raw URL: GitHub's relative ./path?v= redirect drops the query, so the browser cache wins.
+    return f"{RAW}{path}?v={hashlib.md5(open(path, 'rb').read()).hexdigest()[:8]}"
 
 
 def pic(name: str, alt: str, width: str) -> str:
