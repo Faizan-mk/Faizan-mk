@@ -117,7 +117,7 @@ def build(data: dict, mode: str) -> str:
     out.append(
         f'<g class="fade" style="animation-delay:.1s">'
         f'<text x="{W / 2}" y="54" text-anchor="middle" class="t" font-size="36" font-weight="600" '
-        f'letter-spacing="5" fill="{t["text"]}">FAIZAN<tspan fill="{t["accent"]}">.</tspan>DEV</text>'
+        f'letter-spacing="5" fill="{t["text"]}">FAIZAN<tspan fill="{t["accent"]}">.</tspan>CLICK</text>'
         f'<text x="{W / 2}" y="80" text-anchor="middle" class="t" font-size="14" fill="{t["muted"]}">'
         f'full stack developer · react native · next.js</text></g>'
     )

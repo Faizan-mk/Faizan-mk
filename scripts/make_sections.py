@@ -14,13 +14,13 @@ from theme import FONT_MONO, FONT_SANS, THEMES, iso_box, shade
 
 OUT = Path("assets")
 
-PORTFOLIO = "https://portfolio-website-psi-sandy-34.vercel.app"
+PORTFOLIO = "https://faizan.click"
 PLAY = "https://play.google.com/store/apps/details?id=com.rishtaandrang.app"
 GH = "https://github.com/Faizan-mk/"
 
 # label, shown value, link, accent
 CONTACT = [
-    ("portfolio", "my portfolio", PORTFOLIO, False),
+    ("portfolio", "faizan.click", PORTFOLIO, False),
     ("linkedin", "in/muhammad-faizanmk", "https://www.linkedin.com/in/muhammad-faizanmk", False),
     ("email", "faizannaizi007@gmail.com", "mailto:faizannaizi007@gmail.com", False),
     ("resume", "view pdf", "https://drive.google.com/file/d/1gvfkw35DghDp4BdIwe0AmLJlogmfWNlx/view?usp=sharing", True),

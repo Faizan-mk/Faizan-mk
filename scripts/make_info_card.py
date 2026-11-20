@@ -26,6 +26,7 @@ ROWS = [
     ("Cloud",     "AWS Amplify · Vercel · GitHub Actions"),
     ("Edu",       "BS CS · University of Mianwali · 3.44"),
     ("Location",  "Rawalpindi, PK · open to relocation"),
+    ("Web",       "faizan.click"),
 ]
 HIGHLIGHT = {"Now", "Shipped"}     # rows whose value gets the accent colour
 
