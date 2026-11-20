@@ -33,4 +33,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: rebuild contribution city [skip ci]"
-          file_pattern: "data/contributions.json assets/city-dark.svg assets/city-light.svg README.md"
+          file_pattern: "data/contributions.json assets/city-dark.svg assets/city-light.svg assets/v README.md"

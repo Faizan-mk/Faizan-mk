@@ -6,13 +6,28 @@ one that matches the visitor's theme.
 Usage: python scripts/build_readme.py
 """
 
+import hashlib
+from pathlib import Path
+
 from make_sections import CONTACT, HISTORY, PROJECTS, STACK
 
 
+VDIR = Path("assets/v")
+_used: set[str] = set()
+
+
 def v(path: str) -> str:
-    # Relative path: GitHub serves it itself (no camo proxy), so a new image shows within ~5 minutes.
-    # raw.githubusercontent.com ignores ?query, so absolute URLs + ?v= let camo cache stale images.
-    return f"./{path}"
+    """Copy the SVG to assets/v/<name>-<hash>.svg and link that copy.
+
+    A new image always gets a new file name, so no browser, CDN or camo cache
+    can keep showing an old version. Copies nothing links to are removed.
+    """
+    data = Path(path).read_bytes()
+    name = f"{Path(path).stem}-{hashlib.md5(data).hexdigest()[:8]}.svg"
+    VDIR.mkdir(parents=True, exist_ok=True)
+    (VDIR / name).write_bytes(data)
+    _used.add(name)
+    return f"./{VDIR.as_posix()}/{name}"
 
 
 def pic(name: str, alt: str, width: str) -> str:
@@ -65,6 +80,9 @@ def main():
              "the city above rebuilds itself every day from my real contributions</sub>\n\n</div>\n")
 
     open("README.md", "w", encoding="utf-8").write("".join(p))
+    for f in VDIR.glob("*.svg"):
+        if f.name not in _used:
+            f.unlink()
     print("wrote README.md")
 
 
