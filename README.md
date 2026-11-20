@@ -1,13 +1,13 @@
 <div align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/city-dark.svg?v=8ea05f91"><img src="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/city-light.svg?v=1d69d4c7" width="100%" alt="Muhammad Faizan — GitHub contributions over the last year as an animated isometric city"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/city-dark.svg?v=b5a29d7c"><img src="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/city-light.svg?v=11289f79" width="100%" alt="Muhammad Faizan — GitHub contributions over the last year as an animated isometric city"></picture>
 
 <b>Full stack developer</b> shipping web and mobile apps with React, Next.js, React Native and Node.js — from Supabase backends to a live app on Google Play.<br>Full Stack Developer at BitzSol · Rawalpindi, Pakistan.
 </div>
 
 <br>
 <h3><code>faizan@github ~ $ whoami</code></h3>
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/portrait-dark.svg?v=5674f78a"><img src="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/portrait-light.svg?v=4508d175" width="42.5%" alt="ASCII portrait of Muhammad Faizan"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/card-dark.svg?v=5e72a1b5"><img src="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/card-light.svg?v=04de6805" width="56.5%" alt="Neofetch-style card: Full Stack Developer at BitzSol, shipped Lovebirds on Google Play, React, Next.js, React Native, Supabase"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/portrait-dark.svg?v=cf147ebb"><img src="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/portrait-light.svg?v=26bdd441" width="42.5%" alt="ASCII portrait of Muhammad Faizan"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/card-dark.svg?v=ab7628d8"><img src="https://raw.githubusercontent.com/Faizan-mk/Faizan-mk/main/assets/card-light.svg?v=7525d3e8" width="56.5%" alt="Neofetch-style card: Full Stack Developer at BitzSol, shipped Lovebirds on Google Play, React, Next.js, React Native, Supabase"></picture></p>
 
 <h3><code>faizan@github ~ $ ./contact.sh</code></h3>
 <p align="center">
