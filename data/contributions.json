@@ -1851,10 +1851,10 @@
   {
    "date": "2026-11-20",
    "level": 4,
-   "count": 12
+   "count": 14
   }
  ],
- "total": 111,
+ "total": 113,
  "best_date": "2026-11-12",
  "best_count": 14,
  "longest_streak": 32,
