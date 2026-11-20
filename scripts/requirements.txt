@@ -1,2 +1,8 @@
-requests==2.32.3
-beautifulsoup4==4.12.3
+# Daily workflow (city only)
+requests
+# Only needed locally when you change the photo (portrait)
+pillow
+numpy
+opencv-python
+rembg
+onnxruntime
