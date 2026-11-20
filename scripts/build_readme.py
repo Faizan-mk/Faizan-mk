@@ -22,7 +22,7 @@ def v(path: str) -> str:
     A new image always gets a new file name, so no browser, CDN or camo cache
     can keep showing an old version. Copies nothing links to are removed.
     """
-    data = Path(path).read_bytes()
+    data = Path(path).read_bytes().replace(b"\r\n", b"\n")   # same name on Windows and Linux
     name = f"{Path(path).stem}-{hashlib.md5(data).hexdigest()[:8]}.svg"
     VDIR.mkdir(parents=True, exist_ok=True)
     (VDIR / name).write_bytes(data)
