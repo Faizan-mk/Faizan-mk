@@ -1,13 +1,13 @@
 <div align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/city-dark.svg?v=aecf3374"><img src="./assets/city-light.svg?v=7304fbaa" width="100%" alt="Muhammad Faizan — GitHub contributions over the last year as an animated isometric city"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/city-dark.svg?v=e107acfa"><img src="./assets/city-light.svg?v=7ef744db" width="100%" alt="Muhammad Faizan — GitHub contributions over the last year as an animated isometric city"></picture>
 
 <b>Full stack developer</b> shipping web and mobile apps with React, Next.js, React Native and Node.js — from Supabase backends to a live app on Google Play.<br>Full Stack Developer at BitzSol · Rawalpindi, Pakistan.
 </div>
 
 <br>
 <h3><code>faizan@github ~ $ whoami</code></h3>
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/portrait-dark.svg?v=fa6c2f52"><img src="./assets/portrait-light.svg?v=5cc9f25c" width="42.5%" alt="ASCII portrait of Muhammad Faizan"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-dark.svg?v=4bcd9c71"><img src="./assets/card-light.svg?v=9583fa39" width="56.5%" alt="Neofetch-style card: Full Stack Developer at BitzSol, shipped Lovebirds on Google Play, React, Next.js, React Native, Supabase"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/portrait-dark.svg?v=8105c7c0"><img src="./assets/portrait-light.svg?v=43132953" width="42.5%" alt="ASCII portrait of Muhammad Faizan"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/card-dark.svg?v=99b71447"><img src="./assets/card-light.svg?v=a67bc14d" width="56.5%" alt="Neofetch-style card: Full Stack Developer at BitzSol, shipped Lovebirds on Google Play, React, Next.js, React Native, Supabase"></picture></p>
 
 <h3><code>faizan@github ~ $ ./contact.sh</code></h3>
 <p align="center">
