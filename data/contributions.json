@@ -1851,12 +1851,12 @@
   {
    "date": "2026-11-20",
    "level": 4,
-   "count": 16
+   "count": 18
   }
  ],
- "total": 115,
+ "total": 117,
  "best_date": "2026-11-20",
- "best_count": 16,
+ "best_count": 18,
  "longest_streak": 32,
  "current_streak": 11
 }
