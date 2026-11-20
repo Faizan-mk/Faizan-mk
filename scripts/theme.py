@@ -1,4 +1,4 @@
-"""Shared palette: grey everywhere, purple only where it means something."""
+"""Shared palette: grey everywhere, green only where it means something."""
 
 FONT_SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
 FONT_MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
@@ -6,47 +6,47 @@ FONT_MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monosp
 THEMES = {
     "dark": {
         "panel": "#0d1117",
-        "sky": "#0a0716",          # city background (night)
+        "sky": "#070b14",          # city background (night)
         "border": "#30363d",
         "text": "#e6edf3",
         "body": "#c9d1d9",
         "muted": "#8b949e",
         "faint": "#6e7681",
-        "accent": "#a855f7",
-        "accent_dim": "#7e22ce",
-        "accent_deep": "#4c1d95",
+        "accent": "#3fb950",
+        "accent_dim": "#238636",
+        "accent_deep": "#0f5323",
         "block": "#484f58",        # grey building faces: top / left / right
         "block_l": "#30363d",
         "block_r": "#21262d",
         "ground": "#0d1117",
         "road": "#1c2128",
-        "levels": ["#161b22", "#3b1d6e", "#6d28d9", "#9333ea", "#c084fc"],
+        "levels": ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
         "window": "#f2cc60",
         "car_a": "#f2cc60",
         "car_b": "#f85149",
-        "flag": "#a855f7",
+        "flag": "#3fb950",
     },
     "light": {
         "panel": "#ffffff",
-        "sky": "#f6f0ff",          # city background (day)
+        "sky": "#eef6ff",          # city background (day)
         "border": "#d0d7de",
         "text": "#1f2328",
         "body": "#3d444d",
         "muted": "#656d76",
         "faint": "#8c959f",
-        "accent": "#7e22ce",
-        "accent_dim": "#9333ea",
-        "accent_deep": "#581c87",
+        "accent": "#1a7f37",
+        "accent_dim": "#2da44e",
+        "accent_deep": "#116329",
         "block": "#afb8c1",
         "block_l": "#d0d7de",
         "block_r": "#e6eaef",
         "ground": "#f6f8fa",
         "road": "#d8dee4",
-        "levels": ["#ebedf0", "#e9d5ff", "#c084fc", "#9333ea", "#6b21a8"],
+        "levels": ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
         "window": "#ffffff",
         "car_a": "#1f6feb",
         "car_b": "#cf222e",
-        "flag": "#7e22ce",
+        "flag": "#1a7f37",
     },
 }
 
