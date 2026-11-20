@@ -23,7 +23,7 @@ CONTACT = [
     ("portfolio", "my portfolio", PORTFOLIO, False),
     ("linkedin", "in/muhammad-faizanmk", "https://www.linkedin.com/in/muhammad-faizanmk", False),
     ("email", "faizannaizi007@gmail.com", "mailto:faizannaizi007@gmail.com", False),
-    ("resume", "view pdf", "https://drive.google.com/file/d/1X4x2cgexKAuuwurToaMkfaHv6QUcL1rU/view", True),
+    ("resume", "view pdf", "https://drive.google.com/file/d/1gvfkw35DghDp4BdIwe0AmLJlogmfWNlx/view?usp=sharing", True),
 ]
 
 # slug, title, stack, description, link, building height, featured

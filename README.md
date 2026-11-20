@@ -14,7 +14,7 @@
 <a href="https://portfolio-website-psi-sandy-34.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-portfolio-dark.svg"><img src="./assets/contact-portfolio-light.svg" width="24%" alt="portfolio: my portfolio"></picture></a>
 <a href="https://www.linkedin.com/in/muhammad-faizanmk"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-linkedin-dark.svg"><img src="./assets/contact-linkedin-light.svg" width="24%" alt="linkedin: in/muhammad-faizanmk"></picture></a>
 <a href="mailto:faizannaizi007@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-email-dark.svg"><img src="./assets/contact-email-light.svg" width="24%" alt="email: faizannaizi007@gmail.com"></picture></a>
-<a href="https://drive.google.com/file/d/1X4x2cgexKAuuwurToaMkfaHv6QUcL1rU/view"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-resume-dark.svg"><img src="./assets/contact-resume-light.svg" width="24%" alt="resume: view pdf"></picture></a>
+<a href="https://drive.google.com/file/d/1gvfkw35DghDp4BdIwe0AmLJlogmfWNlx/view?usp=sharing"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-resume-dark.svg"><img src="./assets/contact-resume-light.svg" width="24%" alt="resume: view pdf"></picture></a>
 </p>
 
 <br>
