@@ -1,5 +1,5 @@
 <div align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/v/city-dark-4886e69b.svg"><img src="./assets/v/city-light-d56d4c07.svg" width="100%" alt="Muhammad Faizan — GitHub contributions over the last year as an animated isometric city"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/v/city-dark-9f0c9adf.svg"><img src="./assets/v/city-light-881c4a37.svg" width="100%" alt="Muhammad Faizan — GitHub contributions over the last year as an animated isometric city"></picture>
 
 <b>Full stack developer</b> shipping web and mobile apps with React, Next.js, React Native and Node.js — from Supabase backends to a live app on Google Play.<br>Full Stack Developer at BitzSol · Rawalpindi, Pakistan.
 </div>
